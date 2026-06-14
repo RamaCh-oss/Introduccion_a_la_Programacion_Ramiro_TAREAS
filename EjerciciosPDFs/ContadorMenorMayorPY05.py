@@ -4,16 +4,16 @@ num_menor = 0
 
 while True:
     try:      
-        numero = int(input("Ingresar un numero"))
+        numero = int(input("Ingresar un numero, ingresar -1 para terminar: "))
     except ValueError:
-        print("Solo se permiten numeros enteros positivos")
+        print("Solo se permiten numeros enteros positivos ")
         continue
     
     if numero == -1:
         break
         
     if numero < 0:
-        print("Solo se permiten numeros enteros positivos")
+        print("Solo se permiten numeros enteros positivos ")
         continue
     
     if contador == 0:
@@ -30,8 +30,8 @@ while True:
     
 if contador > 0:
         
-    print("Cantidad de numeros ingresados: " , contador)
-    print("Numero menor: " , num_menor)
-    print("Nunero mayor: " , num_mayor)
+    print("Cantidad de numeros ingresados:" , contador)
+    print("Numero menor:" , num_menor)
+    print("Numero mayor:1" , num_mayor)
         
     
